@@ -3,7 +3,7 @@ import WhatsIsAComputer from './questions/WhatIsAComputer';
 import TypesComputers from './questions/TypesComputers';
 import CharacteristicsVariousComputers from './questions/CharacteristicsVariousComputers';
 import CharacteristicsVariosComputersDependingDataHandling from './questions/CharacteristicsVariosComputersDependingDataHandling';
-
+import Author from './author/authos';
 
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
       <TypesComputers />
       <CharacteristicsVariousComputers />
       <CharacteristicsVariosComputersDependingDataHandling />
+
+      <Author />
     </div>
   );
 }
