@@ -22,17 +22,18 @@ const IdentifyTheTypesOfExistingComputers = () => {
 
   return (
     <>
-      <div className='navbar'>
-        <NavBar />
-      </div><div className="container">
-          <div className="row">
+    <div >
+      <NavBar />
+    </div>
+      <div className="container">
+        <div className="row">
             {mapListInfo.map((card, index) => (
               <div className="col-md-4" key={index}>
                 {card}
               </div>
             ))}
-          </div>
         </div>
+      </div>
     </>
   );
 };

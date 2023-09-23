@@ -1,23 +1,31 @@
-
+import Table from 'react-bootstrap/Table';
+import info from '../../utils/questions_three'
 
 const CharacteristicsVariousComputers = () => {
+
+  const characteristics = info.map( element =>
+    <tbody>
+      <tr>
+        <td> {element.type} </td>
+        <td> {element.characteristic} </td>
+        <td> {element.applications} </td>
+      </tr>
+    </tbody>
+  )
+  console.log(characteristics)
+
   return (
     <div>
-      <h1>
-        Cuadro descriptivos con las características de los diversos tipos de computadores.
-      </h1>
-      <table>
-        <thead>
+      <Table responsive>
+        <thead className='text-center'>
           <tr>
-            <th>
-              Nombre
-            </th>
-            <th>
-              Precio
-            </th>
+            <th>Tipos de computadoras</th>
+            <th>Caracateristicas</th>
+            <th>Aplicaciones</th>
           </tr>
-          </thead>
-      </table>
+        </thead>
+          {characteristics}
+      </Table>
     </div>
   );
 };
