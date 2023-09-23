@@ -20,8 +20,14 @@ const IdentifyTheTypesOfExistingComputers = () => {
       )
 
   return (
-    <div>
-      {mapListInfo}
+    <div className="container">
+      <div className="row">
+        {mapListInfo.map((card, index) => (
+          <div className="col-md-4" key={index}>
+            {card}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
