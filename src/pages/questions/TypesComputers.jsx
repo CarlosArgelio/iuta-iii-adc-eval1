@@ -1,16 +1,29 @@
+import Card from 'react-bootstrap/Card';
+import info from '../../utils/questions_two'
 
 
 const IdentifyTheTypesOfExistingComputers = () => {
+
+  const mapListInfo = info.map( info =>
+        <Card style={{
+          width: '18rem',
+          margin: 'auto',
+        }}>
+          <Card.Img variant="top" src={info.image} />
+          <Card.Body>
+            <Card.Title> {info.title} </Card.Title>
+            <Card.Text>
+              {info.description}
+            </Card.Text>
+          </Card.Body>
+        </Card>
+      )
+
   return (
     <div>
-      <h1>
-        ¿Cuáles son los tipos de computadores existentes?
-      </h1>
-      <p>
-        Los tipos de computadores existentes son:
-      </p>
+      {mapListInfo}
     </div>
-  )
+  );
 };
 
 export default IdentifyTheTypesOfExistingComputers;
