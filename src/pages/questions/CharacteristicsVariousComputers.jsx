@@ -1,4 +1,5 @@
 import Table from 'react-bootstrap/Table';
+import NavBar from '../../pages/navbar/navbar';
 import info from '../../utils/questions_three'
 
 const CharacteristicsVariousComputers = () => {
@@ -15,18 +16,23 @@ const CharacteristicsVariousComputers = () => {
   console.log(characteristics)
 
   return (
-    <div>
-      <Table responsive>
-        <thead className='text-center'>
-          <tr>
-            <th>Tipos de computadoras</th>
-            <th>Caracateristicas</th>
-            <th>Aplicaciones</th>
-          </tr>
-        </thead>
-          {characteristics}
-      </Table>
-    </div>
+    <>
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <Table responsive>
+          <thead className='text-center'>
+            <tr>
+              <th>Tipos de computadoras</th>
+              <th>Caracateristicas</th>
+              <th>Aplicaciones</th>
+            </tr>
+          </thead>
+            {characteristics}
+        </Table>
+      </div>
+    </>
   );
 };
 
