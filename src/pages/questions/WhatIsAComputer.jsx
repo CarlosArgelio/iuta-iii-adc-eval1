@@ -1,13 +1,18 @@
 import Card from 'react-bootstrap/Card';
 import computerIMage from '../../assets/questionsOne/resource_computer_1.jpg'
+import NavBar from '../navbar/navbar';
+
 
 
 function WhatsIsAComputer() {
   return (
-    <Card style={{
+    <>
+      <NavBar />
+
+      <Card style={{
       width: '18rem',
       margin: 'auto',
-    }}>
+      }}>
       <Card.Img variant="top" src={computerIMage} />
       <Card.Body>
         <Card.Title> ¿Que es un computador? </Card.Title>
@@ -18,6 +23,7 @@ function WhatsIsAComputer() {
         </Card.Text>
       </Card.Body>
     </Card>
+    </>
   );
 }
 

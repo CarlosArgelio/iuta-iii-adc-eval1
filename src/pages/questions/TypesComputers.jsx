@@ -1,5 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import info from '../../utils/questions_two'
+import NavBar from '../navbar/navbar';
 
 
 const IdentifyTheTypesOfExistingComputers = () => {
@@ -20,15 +21,19 @@ const IdentifyTheTypesOfExistingComputers = () => {
       )
 
   return (
-    <div className="container">
-      <div className="row">
-        {mapListInfo.map((card, index) => (
-          <div className="col-md-4" key={index}>
-            {card}
+    <>
+      <div className='navbar'>
+        <NavBar />
+      </div><div className="container">
+          <div className="row">
+            {mapListInfo.map((card, index) => (
+              <div className="col-md-4" key={index}>
+                {card}
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+    </>
   );
 };
 
