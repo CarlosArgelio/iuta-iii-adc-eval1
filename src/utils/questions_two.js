@@ -2,7 +2,7 @@ const info = [
   {
     title: 'Computadoras de escritorio',
     description: 'Las computadoras de escritorio son las computadoras más comunes. Se componen de una torre, un monitor, un teclado y un mouse. Las computadoras de escritorio suelen ser más potentes que las computadoras portátiles y los dispositivos móviles, y se utilizan a menudo para tareas que requieren un alto rendimiento, como juegos, edición de video y diseño gráfico.',
-    image: 'https://www.w3schools.com/howto/img_avatar.png'
+    image: ''
   },
   {
     title: 'Computadoras portátiles',
